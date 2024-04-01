@@ -10,7 +10,7 @@ The motivation behind this challenge is to cultivate discipline, consistency, an
 - Bhavuk Gaur
 ## LeetCode Profile : 
 - [va-run-6626](https://leetcode.com/va-run-6626/)
-- [Bhavuk](link_to_bhavuk's_profile)
+- [kazakie96](https://leetcode.com/kazakie96/)
 
 ## Rules
 1. Code every single day for 365 days straight.
