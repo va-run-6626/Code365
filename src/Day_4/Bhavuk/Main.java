@@ -1,4 +1,4 @@
-package Day_4;
+package Day_4.Bhavuk;
 
 public class Main {
     public static void main(String[] args) {
