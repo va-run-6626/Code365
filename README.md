@@ -7,7 +7,7 @@ The motivation behind this challenge is to cultivate discipline, consistency, an
 
 ## Contributors
 - Varun Bhutada
-- Bhavuk Gaur
+- Day_7.Bhavuk Gaur
 ## LeetCode Profile : 
 - [va-run-6626](https://leetcode.com/va-run-6626/)
 - [kazakie96](https://leetcode.com/kazakie96/)
