@@ -1,7 +1,7 @@
+package Day_10.Bhavuk;
 
 
-
- public class RemoveNthNode {
+public class RemoveNthNode {
      public static void main(String[] args) {
          // Create a linked list: 1 -> 2 -> 3 -> 4 -> 5
          ListNode head = new ListNode(1);
@@ -10,7 +10,7 @@
          head.next.next.next = new ListNode(4);
          head.next.next.next.next = new ListNode(5);
 
-         // Create an instance of the Solution class
+         // Create an instance of the Day_10.Bhavuk.Solution class
          Solution solution = new Solution();
 
          // Remove the 2nd node from the end
@@ -24,7 +24,7 @@
          }
      }
   }
-// Define the ListNode class
+// Define the Day_10.Bhavuk.ListNode class
  class ListNode {
     int val;
     ListNode next;
@@ -34,7 +34,7 @@
     }
  }
 
-// Define the Solution class
+// Define the Day_10.Bhavuk.Solution class
  class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         int length = findLength(head);
