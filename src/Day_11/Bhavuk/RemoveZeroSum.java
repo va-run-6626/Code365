@@ -21,6 +21,7 @@ public class RemoveZeroSum {
             System.out.print(result.val + " ");
             result = result.next;
         }
+
     }
 }
 
