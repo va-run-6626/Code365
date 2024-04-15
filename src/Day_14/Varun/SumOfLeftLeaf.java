@@ -1,17 +1,6 @@
 package Day_14.Varun;
 
-class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode() {}
-      TreeNode(int val) { this.val = val; }
-      TreeNode(int val, TreeNode left, TreeNode right) {
-          this.val = val;
-          this.left = left;
-          this.right = right;
-      }
-  }
+import Day_0_GenericClasses.TreeNode;
 
 public class SumOfLeftLeaf {
     public static void main(String[] args) {
