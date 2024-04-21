@@ -1,4 +1,6 @@
 package Day_20.Varun;
+import Day_0_GenericClasses.Pair;
+
 import java.util.*;
 public class FindAllGroupsofFarmland {
     public static void main(String[] args) {
@@ -14,14 +16,6 @@ public class FindAllGroupsofFarmland {
     }
 }
 class Solution {
-    class Pair{
-        int x;
-        int y;
-        public Pair(int x, int y){
-            this.x = x;
-            this.y = y;
-        }
-    }
     public int[][] findFarmland(int[][] land) {
         int row = land.length;
         int col = land[0].length;
