@@ -2,25 +2,32 @@ package Day_1.Bhavuk;
 
 public class LengthOf_LastWord {
     public static void main(String[] args) {
-        String name = "Hello everyone ";
+        String name = "a";
         int n = new Solution1().lengthOfLastWord(name);
         System.out.println(n);
     }
 }
 class Solution1 {
     public int lengthOfLastWord(String s) {
-        int n = s.length()-1;
-        int count = 0;
-        for(int i = n; i>=0; i--){
-            if(s.charAt(i)!=' '){
-                count++;
-            }else{
-                if(count>0){
-                    return count;
-                }
-            }
+        if (s == null || s.isEmpty()) {
+            return 0;
         }
-        return count;
 
+        int length = s.length();
+        int count = 0;
+        int i = length - 1;
+
+        // Skip trailing spaces
+        while (i >= 0 && s.charAt(i) == ' ') {
+            i--;
+        }
+
+        // Count characters until a space or beginning of string
+        while (i >= 0 && s.charAt(i) != ' ') {
+            count++;
+            i--;
+        }
+
+        return count;
     }
 }
