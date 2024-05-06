@@ -15,9 +15,9 @@ public class DeleteNodeFromLinkedList {
         a2.next = a3;
         a3.next = a4;
         Solution sol = new Solution();
-        sol.Print(head);
+        ListNode.Print(head);
         sol.deleteNode(a3);
-        sol.Print(head);
+        ListNode.Print(head);
 
     }
 }
@@ -25,12 +25,5 @@ class Solution{
     public void deleteNode(ListNode node) {
         node.val = node.next.val;
         node.next = node.next.next;
-    }
-    public void Print(ListNode head){
-        while(head != null){
-            System.out.print(head.val + "->");
-            head = head.next;
-        }
-        System.out.println();
     }
 }
