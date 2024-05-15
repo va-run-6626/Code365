@@ -2,19 +2,22 @@ package Day_45.Varun;
 import java.util.*;
 public class FindSafestPathInTheGrid {
     public static void main(String[] args) {
-        ArrayList<ArrayList<Integer>> twoDList = new ArrayList<>();
+        List<List<Integer>> twoDList = new ArrayList<>();
 
         ArrayList<Integer> firstRow = new ArrayList<>();
-        firstRow.add(1); firstRow.add(2); firstRow.add(3);
+        firstRow.add(0); firstRow.add(0); firstRow.add(1);
         twoDList.add(firstRow);
 
         ArrayList<Integer> secondRow = new ArrayList<>();
-        secondRow.add(4); secondRow.add(5); secondRow.add(6);
+        secondRow.add(0); secondRow.add(0); secondRow.add(0);
         twoDList.add(secondRow);
 
         ArrayList<Integer> thirdRow = new ArrayList<>();
-        thirdRow.add(7); thirdRow.add(8); thirdRow.add(9);
+        thirdRow.add(0); thirdRow.add(0); thirdRow.add(0);
         twoDList.add(thirdRow);
+
+        int ans = new Solution().maximumSafenessFactor(twoDList);
+        System.out.println(ans);
     }
 }
 class Solution {
