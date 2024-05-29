@@ -1,5 +1,7 @@
 package Day_41.Bhavuk;
 
+import Day_0_GenericClasses.TreeNode;
+
 public class Solution {
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
