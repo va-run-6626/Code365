@@ -15,6 +15,12 @@ package Day_47.Bhavuk;
  *     }
  * }
  */
+
+import Day_0_GenericClasses.TreeNode;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
