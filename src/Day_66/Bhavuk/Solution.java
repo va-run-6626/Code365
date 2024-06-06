@@ -1,4 +1,7 @@
 package Day_66.Bhavuk;
+
+import java.util.*;
+
 class Solution {
     public List<String> commonChars(String[] words) {
         int[] minFreq = new int[26];
