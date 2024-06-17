@@ -1,5 +1,7 @@
 package Day_48.Bhavuk;
 
+import Day_0_GenericClasses.TreeNode;
+
 class Solution {
     private int moves = 0;
 
