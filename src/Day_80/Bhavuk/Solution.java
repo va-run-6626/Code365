@@ -1,43 +1,32 @@
-package Day_80.Bhavuk;
-
-import java.util.Arrays;
-
 class Solution {
-    public int maxDistance(int[] position, int m) {
-        Arrays.sort(position);
-        int n = position.length;
-        int l =1;
-        int h = position[n-1]-position[0];
-        int res = -1;
-
-        while(l <= h){
-
-            int mid = l + (h-l)/2;
-            int dist = calculate(position, mid);
-
-            if(dist >= m){
-                res = mid;
-                l = mid+1;
-            }
-            else
-                h = mid-1;
+    public int maxSatisfied(int[] customers, int[] grumpy, int minutes) {
+        //using khandani sliding window template
+        int n = customers.length;
+        int current_Unstatisfied = 0;
+        //for first window
+        for(int i = 0; i<minutes; i++){
+            current_Unstatisfied += customers[i]*grumpy[i];
         }
-        return res;
-    }
+        int max_Unstatisfied = current_Unstatisfied;
+
+        int i = 0;
+        int j = minutes;
+        while(j<n){
+            current_Unstatisfied += customers[j]*grumpy[j]; //new element in the window
+            current_Unstatisfied -= customers[i]*grumpy[i]; // removing element from the window
 
 
-    int calculate(int[] arr, int mid){
-        int ball = 1;
-        int pos = arr[0];
+            max_Unstatisfied = Math.max(max_Unstatisfied,current_Unstatisfied);
 
-        for(int i=1; i<arr.length; i++){
-            if(arr[i]-pos >= mid){
-                ball++;
-
-                pos = arr[i];
-            }
+            i++;
+            j++;
         }
-        return ball;
-    }
 
+        int total_Unsatisfied = max_Unstatisfied;
+        for(int k = 0; k<n; k++){
+            total_Unsatisfied += customers[k]*(1-grumpy[k]); // only 0's
+        }
+        return total_Unsatisfied;
+
+    }
 }
